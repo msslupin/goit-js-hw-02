@@ -21,7 +21,7 @@ function getShippingCost(country) {
   return `Shipping to ${country} will cost ${price} credits`;
 }
 
-// Test kodları
+
 console.log(getShippingCost("Australia")); 
 console.log(getShippingCost("Germany")); 
 console.log(getShippingCost("China")); 
