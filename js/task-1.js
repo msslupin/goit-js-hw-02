@@ -1,13 +1,9 @@
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
-  // Toplam fiyatı hesapla
   let totalPrice = quantity * pricePerDroid;
 
-  // Eğer toplam fiyat müşteri kredilerinden az veya eşitse
   if (totalPrice <= customerCredits) {
-    // Sipariş başarıyla alındı
     return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
   } else {
-    // Yetersiz bakiye
     return "Insufficient funds!";
   }
 }
